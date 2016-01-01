@@ -504,6 +504,22 @@ Customized styles
 .navbar-default {
     background-color: #231b12;
 }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #f25c00;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
 
 .bg-overlay {
     position:absolute;
