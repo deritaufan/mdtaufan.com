@@ -15,4 +15,9 @@
 //= require jquery_ujs
 //= require jquery.easing
 //= require turbolinks
+//= require classie
+//= require cbpAnimatedHeader
+//= require jqBootstrapValidation
+//= require contact_me
+//= require freelancer
 //= require_tree .
