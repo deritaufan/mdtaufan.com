@@ -17,7 +17,5 @@
 //= require turbolinks
 //= require classie
 //= require cbpAnimatedHeader
-//= require jqBootstrapValidation
-//= require contact_me
 //= require freelancer
 
