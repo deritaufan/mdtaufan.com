@@ -125,6 +125,21 @@ header .intro-text .skills {
 }
 
 @media(min-width:768px) {
+    header {
+        background-image:image-url("header-bg-1080.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:700px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+    
     header .container {
         padding-top: 200px;
         padding-bottom: 100px;
@@ -220,6 +235,21 @@ section.success a.active {
 }
 
 @media(max-width:767px) {
+    section.success {
+        background-image:image-url("section-bg-1080.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:400px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+    
     section {
         padding: 75px 0;
     }
