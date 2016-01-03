@@ -124,7 +124,7 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(min-width:768px) {
+@media(min-width:639px) {
     header {
         background-image:image-url("header-bg-1080.jpg");
         background-attachment:fixed !important;
@@ -139,6 +139,9 @@ header .intro-text .skills {
         text-align: center;
         color: #fff;
     }
+}
+
+@media(min-width:768px) {
     
     header .container {
         padding-top: 200px;
@@ -234,7 +237,7 @@ section.success a.active {
     color: #2c3e50;
 }
 
-@media(max-width:767px) {
+@media(min-width:639px) {
     section.success {
         background-image:image-url("section-bg-1080.jpg");
         background-attachment:fixed !important;
@@ -249,6 +252,9 @@ section.success a.active {
         text-align: center;
         color: #fff;
     }
+}
+
+@media(max-width:767px) {
     
     section {
         padding: 75px 0;
