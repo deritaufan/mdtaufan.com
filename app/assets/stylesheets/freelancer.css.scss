@@ -124,7 +124,7 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(min-width:639px) {
+@media(max-width:640px) {
     header {
         background-image:image-url("header-bg-1080.jpg");
         background-attachment:fixed !important;
@@ -237,7 +237,7 @@ section.success a.active {
     color: #2c3e50;
 }
 
-@media(min-width:639px) {
+@media(max-width:640px) {
     section.success {
         background-image:image-url("section-bg-1080.jpg");
         background-attachment:fixed !important;
