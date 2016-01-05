@@ -124,23 +124,6 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(max-width:750px) {
-    header {
-        background-image:image-url("header-bg-750.jpg");
-        background-attachment:fixed !important;
-        background-size:cover;
-        -o-background-size:cover;
-        -moz-background-size:cover;
-        -webkit-background-size:cover;
-        background-position:0 0;
-        background-repeat: no-repeat;
-        min-height:700px;
-        position:relative;
-        text-align: center;
-        color: #fff;
-    }
-}
-
 @media(min-width:768px) {
     
     header .container {
@@ -235,23 +218,6 @@ section.success a:active,
 section.success a.active {
     outline: 0;
     color: #2c3e50;
-}
-
-@media(max-width:750px) {
-    section.success {
-        background-image:image-url("section-bg-750.jpg");
-        background-attachment:fixed !important;
-        background-size:cover;
-        -o-background-size:cover;
-        -moz-background-size:cover;
-        -webkit-background-size:cover;
-        background-position:0 0;
-        background-repeat: no-repeat;
-        min-height:400px;
-        position:relative;
-        text-align: center;
-        color: #fff;
-    }
 }
 
 @media(max-width:767px) {
@@ -590,3 +556,136 @@ Customized styles
 .center-block {
     float: none;
 }
+
+@media only screen 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+        background-image:image-url("header-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:700px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    section.success {
+        background-image:image-url("section-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:400px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media screen 
+  and (-webkit-device-pixel-ratio: 2) {
+      header {
+        background-image:image-url("header-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:700px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    section.success {
+        background-image:image-url("section-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:400px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media screen 
+  and (-webkit-device-pixel-ratio: 3) {
+      header {
+        background-image:image-url("header-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:700px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    section.success {
+        background-image:image-url("section-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:400px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media only screen 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      header {
+        background-image:image-url("header-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:700px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    section.success {
+        background-image:image-url("section-bg-750.jpg");
+        background-attachment:fixed !important;
+        background-size:cover;
+        -o-background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        background-position:0 0;
+        background-repeat: no-repeat;
+        min-height:400px;
+        position:relative;
+        text-align: center;
+        color: #fff;
+    }
+}
+
