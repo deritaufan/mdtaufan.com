@@ -25,9 +25,9 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <%= link_to new_contact_path do %>
+                        <a href="#contact">
                             <i class="fa fa-envelope-o fa-lg"></i>
-                        <% end %>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -111,7 +111,11 @@
             </div>
         </div>
     </section>
-
+    
+    <section id="contact">
+        <%= render 'contact_me' %>
+    </section>
+    
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
         <a class="btn btn-primary" href="#page-top">

@@ -1,22 +1,18 @@
 class PagesController < ApplicationController
     def index
-        @contact = Contact.new
     end
     
     def create
-       @contact = Contact.new(contact_params)
-       
-       respond_to do |format|
-           if !@contact.save
-               @error = "Cannot send message!"
-           end
-           format.js
-       end
-           
-    end
-    
-    private
-        def contact_params
-            params.require(:contact).permit(:name, :email, :message)
+        name  = params[:name]
+        email = params[:email]
+        message = params[:message]
+        create_contact = Contact.create(name: name, email: email, message: message)
+        if create_contact.valid?
+            ContactMailer.contact_email(name, email, message).deliver
+            html = render_to_string :partial => 'contact_response', :locals => {:create_contact => create_contact}
+            respond_to do |format|
+                format.json { render :json => {:success => true, :html => html} }
+            end
         end
+    end
 end
