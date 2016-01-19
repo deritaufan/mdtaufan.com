@@ -36,6 +36,8 @@ gem 'jquery-easing-rails'
 # Use jquery form validator
 gem 'jquery-form-validator-rails'
 
+# Use Devise
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
