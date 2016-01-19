@@ -9,6 +9,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="page-top" class="index">
+<% if Rails.application.routes.recognize_path(request.path)[:controller].include? "devise" %>
+  <%= render 'navbar_admin' %>
+<% elsif Rails.application.routes.recognize_path(request.path)[:controller].include? "pages" %>
+  <%= render 'navbar_index' %>
+<% end %>
 <%= yield %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
