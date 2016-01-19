@@ -9,9 +9,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="page-top" class="index">
-<% if Rails.application.routes.recognize_path(request.path)[:controller].include? "devise" %>
+<% current_controller = Rails.application.routes.recognize_path(request.path)[:controller] %>
+<% if current_controller.include? "devise" %>
   <%= render 'navbar_admin' %>
-<% elsif Rails.application.routes.recognize_path(request.path)[:controller].include? "pages" %>
+<% elsif current_controller.include? "pages" %>
   <%= render 'navbar_index' %>
 <% end %>
 <%= yield %>
