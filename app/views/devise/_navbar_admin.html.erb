@@ -18,12 +18,12 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <% if current_admin %>
                     <li class="page-scroll">
                         <a href="#profile">Dashboard</a>
                     </li>
-                    <% if current_admin %>
                     <li class="page-scroll">
-                        <% button_to "Logout", destroy_admin_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
+                        <%= button_to "Logout", destroy_admin_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
                     </li>
                     <% end %>
                 </ul>
