@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboard/' => 'dashboard#main'
   devise_for :admins
   root 'pages#index'
   post 'contact/' => 'pages#create'
