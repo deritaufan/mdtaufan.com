@@ -29,6 +29,11 @@
                         <i class="fa fa-envelope-o fa-lg"></i>
                     </a>
                 </li>
+                <% if current_admin %>
+                    <li class="page-scroll">
+                        <%= button_to "Logout", destroy_admin_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
+                    </li>
+                <% end %>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

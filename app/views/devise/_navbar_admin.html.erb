@@ -19,11 +19,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#profile">Profile</a>
+                        <a href="#profile">Dashboard</a>
                     </li>
+                    <% if current_admin %>
                     <li class="page-scroll">
-                        <a href="#logout">Logout</a>
+                        <% button_to "Logout", destroy_admin_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
                     </li>
+                    <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
