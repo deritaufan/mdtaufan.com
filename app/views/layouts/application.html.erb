@@ -12,8 +12,10 @@
 <% current_controller = Rails.application.routes.recognize_path(request.path)[:controller] %>
 <% if current_controller["devise"] || current_controller["dashboard"] %>
   <%= render 'layouts/navbar_admin' %>
-<% else %>
+<% elsif current_controller["pages"] %>
   <%= render 'layouts/navbar_index' %>
+<% else %>
+  <%= render 'layouts/navbar_other' %>
 <% end %>
 <%= yield %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

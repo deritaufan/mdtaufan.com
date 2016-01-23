@@ -9,7 +9,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#page-top"><%= image_tag("logo.png") %></a>
+            <%= link_to(root_path, class: "navbar-brand") do %>
+                    <%= image_tag("logo.png") %>
+            <% end %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,18 +21,18 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#portfolio">Workshop</a>
+                    <%= link_to "Workshop", root_path(anchor: "portfolio") %>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about">About</a>
+                    <%= link_to "About", root_path(anchor: "about") %>
                 </li>
                 <li class="page-scroll">
                     <%= link_to("Blogs", blogs_path) %>
                 </li>
                 <li class="page-scroll">
-                    <a href="#contact">
+                    <%= link_to(root_path(anchor: "contact")) do %>
                         <i class="fa fa-envelope-o fa-lg"></i>
-                    </a>
+                    <% end %>
                 </li>
                 <% if current_admin %>
                     <li class="page-scroll">
