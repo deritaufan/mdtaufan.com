@@ -12,7 +12,7 @@
 <% current_controller = Rails.application.routes.recognize_path(request.path)[:controller] %>
 <% if current_controller["devise"] || current_controller["dashboard"] %>
   <%= render 'layouts/navbar_admin' %>
-<% elsif current_controller.include? "pages" %>
+<% else %>
   <%= render 'layouts/navbar_index' %>
 <% end %>
 <%= yield %>
