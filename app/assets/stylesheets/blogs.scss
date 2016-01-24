@@ -69,5 +69,46 @@
 }
 
 section {
-    padding: 120px 0 100px 0;
+    padding: 60px 0 100px 0;
+}
+
+header.blog {
+    background-image:image-url("blog-bg.jpg");
+     background-attachment:fixed !important;
+     background-size:auto;
+    -o-background-size:auto;
+    -moz-background-size:auto;
+    -webkit-background-size:auto;
+    background-position:0 0;
+    background-repeat:repeat;
+    min-height:400px;
+    position:relative;
+    text-align: center;
+    color: #fff;
+}
+header .intro-text-blog {
+  padding: 150px;
+}
+header .intro-text-blog .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text-blog .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+
+    header .intro-text-blog .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text-blog .skills {
+        font-size: 1.75em;
+    }
 }
