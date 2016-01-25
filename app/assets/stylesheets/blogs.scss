@@ -14,12 +14,19 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
+.post-preview .post-subtitle {
+    font-family: Lora,'Times New Roman',serif;
+    text-transform: none;
+}
+
 .post-preview > a > .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
+  font-family: Lora,'Times New Roman',serif;
   color: #808080;
   font-size: 18px;
   font-style: italic;
@@ -111,4 +118,51 @@ header .intro-text-blog .skills {
     header .intro-text-blog .skills {
         font-size: 1.75em;
     }
+}
+
+header.blog-post {
+    background-image:image-url("post-bg.jpg");
+     background-attachment:fixed !important;
+     background-size:auto;
+    -o-background-size:auto;
+    -moz-background-size:auto;
+    -webkit-background-size:auto;
+    background-position:0 0;
+    background-repeat:repeat;
+    min-height:400px;
+    position:relative;
+    text-align: center;
+    color: #fff;
+}
+
+header .blog-post-intro {
+  padding: 150px 0;
+}
+
+header .blog-post-intro h2 {
+    display: block;
+    text-transform: uppercase;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+header .blog-post-intro .title {
+    font-family: Lora,'Times New Roman',serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+header .blog-post-intro .meta {
+    font-family: Lora,'Times New Roman',serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+}
+
+section .blog-text {
+    font-family: Lora,'Times New Roman',serif;
+    font-size: 20px;
+    color: #404040;
 }
