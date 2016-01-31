@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  root 'pages#index'
+  post 'contact/' => 'pages#create'
+  devise_for :admins
   get 'blogs/:id' => 'blogs#show'
   get 'blogs/' => 'blogs#index'
   get 'dashboard/' => 'dashboard#main'
-  devise_for :admins
-  root 'pages#index'
-  post 'contact/' => 'pages#create'
+  get 'dashboard/add_post' => 'dashboard#add_post'
+  post 'dashboard/create_post' => 'dashboard#create_post'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
