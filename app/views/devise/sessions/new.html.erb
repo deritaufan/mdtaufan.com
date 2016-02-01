@@ -5,6 +5,9 @@
 <h2>Owner Only</h2>
 <div class="horizontal-line"></div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<% resource.errors.full_messages.each do |msg| %>
+        <p class='pale-red'><%= msg %></p>
+      <% end %>
   <div class="field form-group input-group">
       <span class="input-group-addon">
         <i class="glyphicon glyphicon-envelope"></i>
