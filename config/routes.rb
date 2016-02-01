@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root 'pages#index'
   post 'contact/' => 'pages#create'
   devise_for :admins
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get 'dashboard/' => 'dashboard#main'
   get 'dashboard/add_post' => 'dashboard#add_post'
   post 'dashboard/create_post' => 'dashboard#create_post'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

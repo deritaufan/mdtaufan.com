@@ -5,22 +5,22 @@
         <br/>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <%= form_for @post, url: dashboard_create_post_path do |f| %>
+                <% flash.each do |key, value| %>
+                    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+                <% end %>
+                <%= form_for @blog, url: dashboard_create_post_path do |f| %>
                     <div class="form-group">
-                        <%= f.label :title %>
-                        <%= f.text_field :title, class: 'form-control' %>
+                        <%= f.text_field :title, class: 'form-control', placeholder: 'Post Title' %>
                     </div>
                     
                     <div class="form-group">
-                        <%= f.label :sub_title %>
-                        <%= f.text_field :sub_title, class: 'form-control' %>
+                        <%= f.text_field :sub_title, class: 'form-control', placeholder: 'Post Subtitle' %>
                     </div>
                     
                     <div class="form-group">
-                        <%= f.label :post %>
-                        <%= f.text_area :post, class: 'form-control' %>
+                        <%= f.cktext_area :post, class: 'form-control', ckeditor: {language: 'en'}, placeholder: 'Content' %>
                     </div>
-                    <%= f.submit "Submit", class: "btn btn-default" %>
+                    <%= f.button "Submit", class: "btn btn-primary btn-block" %>
                 <% end %>
             </div>
         </div>

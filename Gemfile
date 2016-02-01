@@ -41,6 +41,12 @@ gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use paperclip
+gem 'paperclip'
+
+# Use CKEditor
+gem 'ckeditor'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

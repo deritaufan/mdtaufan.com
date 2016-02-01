@@ -20,4 +20,4 @@
 //= require jquery.form-validator
 //= require freelancer
 //= require contact_me
-
+//= require ckeditor/init
