@@ -1,10 +1,10 @@
 <section class="admin">
-    <div class="container text-center">
-        <h2>Owner Dashboard</h2>
-        <div class="horizontal-line"></div>
-        <br/>
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-4 col-lg-offset-4 text-center">
+              <h2>Owner Dashboard</h2>
+              <div class="horizontal-line"></div>
+              <%= render 'layouts/messages' %>
               <p>
                 <%= link_to(dashboard_add_post_path, class: "btn btn-squared-default btn-primary") do %>
                     <i class="fa fa-pencil-square-o fa-5x"></i><br/>

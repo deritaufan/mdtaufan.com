@@ -3,11 +3,12 @@
         <div class="col-lg-12 text-center">
             <h2>Contact Me</h2>
             <div class="horizontal-line"></div>
-            <div id="result"></div>
+            
         </div>
     </div>
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
+        <div id="result"></div>
         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
         <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
             <%= form_tag(contact_path, remote: true, id: "contactForm", novalidate: "novalidate") do %>
