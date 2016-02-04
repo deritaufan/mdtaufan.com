@@ -47,6 +47,10 @@ gem 'paperclip'
 # Use CKEditor
 gem 'ckeditor'
 
+# Use will_paginate
+gem 'will_paginate', '~> 3.0.5'
+gem 'will_paginate-bootstrap'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

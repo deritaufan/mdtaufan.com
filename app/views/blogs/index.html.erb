@@ -27,16 +27,13 @@
                         </h3>
                         <% end %>
                     <% end %>
-                    <p class="post-meta">Posted on <%= blog.created_at.strftime("%B %e, %Y") %></p>
+                    <p class="post-meta">Posted on <%= blog.created_at.strftime("%B %e, %Y") %> at <%= blog.created_at.strftime("%H:%M") %></p>
                 </div>
                 <hr>
                 <% end %>
                 <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
+                <%= will_paginate @blogs, renderer: BootstrapPagination::Rails %>
+                
             </div>
         </div>
     </div>
