@@ -6,9 +6,9 @@
             <div class="blog-post-intro">
                 <h2><%= @blog.title %></h2>
                 <% unless @blog.sub_title.blank? %>
-                <span class="title">Just started learning to code in iOS - Ruby on Rails - Android</span>
+                <span class="title"><%= @blog.sub_title %></span>
                 <% end %>
-                <div class="meta">Posted on <%= @blog.created_at.strftime("%B %e, %Y") %></div>
+                <div class="meta">Posted on <%= @blog.created_at.strftime("%B %e, %Y") %> at <%= blog.created_at.strftime("%H:%M") %></div>
             </div>
         </div>
     </div>
