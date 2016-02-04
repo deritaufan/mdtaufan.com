@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   root 'pages#index'
   post 'contact/' => 'pages#create'
   devise_for :admins
-  get 'blogs/:id' => 'blogs#show'
-  get 'blogs/' => 'blogs#index'
+  # get 'blogs/:id' => 'blogs#show', as: :blog
+  # get 'blogs/' => 'blogs#index'
+  resources :blogs, only: [:index, :show]
   get 'dashboard/' => 'dashboard#main'
   get 'dashboard/add_post' => 'dashboard#add_post'
   post 'dashboard/create_post' => 'dashboard#create_post'

@@ -16,7 +16,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <%= f.cktext_area :post, class: 'form-control', ckeditor: {language: 'en'}, data: {:validation => "required", "validation-error-msg" => "Content cannot be empty"} %>
+                        <%= f.cktext_area :post, class: 'form-control', ckeditor: {language: 'en'} %>
                     </div>
                     <%= f.button "Submit", class: "btn btn-primary btn-block" %>
                 <% end %>

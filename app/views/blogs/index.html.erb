@@ -15,27 +15,22 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <% @blogs.each do |blog| %>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <%= link_to blog do %>
                         <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
+                            <%= blog.title %>
                         </h2>
+                        <% unless blog.sub_title.blank? %>
                         <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
+                            <%= blog.sub_title %>
                         </h3>
-                    </a>
-                    <p class="post-meta">Posted on September 24, 2014</p>
+                        <% end %>
+                    <% end %>
+                    <p class="post-meta">Posted on <%= blog.created_at.strftime("%B %e, %Y") %></p>
                 </div>
                 <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted on September 18, 2014</p>
-                </div>
-                <hr>
+                <% end %>
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">
