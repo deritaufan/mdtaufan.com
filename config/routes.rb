@@ -9,7 +9,11 @@ Rails.application.routes.draw do
   get 'dashboard/' => 'dashboard#main'
   get 'dashboard/add_post' => 'dashboard#add_post'
   post 'dashboard/create_post' => 'dashboard#create_post'
-
+  get 'dashboard/list_post' => 'dashboard#list_post'
+  delete 'dashboard/delete_post/:id' => 'dashboard#delete_post', as: :dashboard_delete_post
+  get 'dashboard/edit_post/:id' => 'dashboard#edit_post', as: :dashboard_edit_post
+  patch 'dashboard/edit_post/:id' => 'dashboard#update_post'
+  put 'dashboard/edit_post/:id' => 'dashboard#update_post'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

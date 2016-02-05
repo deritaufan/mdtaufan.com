@@ -1,0 +1,37 @@
+<section class="admin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Post List</h2>
+                <div class="horizontal-line"></div>
+                <%= render 'layouts/messages' %>
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="success">
+                        <th>Title</th>
+                        <th>Sub-title</th>
+                        <th class='text-right'>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @blogs.each do |blog| %>
+                        <tr class='text-left'>
+                        <td><%= blog.title %></td>
+                        <td><%= blog.sub_title %></td>
+                        <td class="text-right">
+                            <%= link_to({controller: "dashboard", action: "edit_post", id: blog}, class: "btn btn-warning") do %>
+                                <i class="fa fa-pencil fa-lg"></i>
+                            <% end %>
+                            <%= link_to({controller: "dashboard", action: "delete_post", id: blog}, method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?" }) do %>
+                                <i class="fa fa-trash-o fa-lg"></i>
+                            <% end %>
+                        </td>
+                        </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+                <%= will_paginate @blogs, renderer: BootstrapPagination::Rails %>
+            </div>
+        </div>
+    </div>
+</section>
