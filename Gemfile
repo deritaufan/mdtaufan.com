@@ -44,6 +44,13 @@ gem 'devise'
 # Use paperclip
 gem 'paperclip'
 
+# use aws-sdk
+# gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '< 2.0'
+
+#use figaro for ENV
+gem 'figaro'
+
 # Use CKEditor
 gem 'ckeditor'
 
